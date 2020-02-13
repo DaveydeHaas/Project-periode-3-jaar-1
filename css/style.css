@@ -1,5 +1,18 @@
-/* navbbar */
+/* standaard styling */
+.lettertype
+{
+    font-family: 'Lateef', cursive;
+}
 
+/* navbar */
+.navbar-background-color
+{
+    background-color: yellow;
+}
+.navbar-fontsize
+{
+    font-size: 35px;
+}
 
 
 /* footer */

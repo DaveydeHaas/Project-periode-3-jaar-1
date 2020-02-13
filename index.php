@@ -20,7 +20,7 @@
   <title>Schizopedia.org</title>
 </head>
 
-<body>
+<body class="lettertype">
   <!-- include navbar -->
   <?php include("./layout-basic/navbar.php"); ?>
 
