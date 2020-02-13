@@ -3,15 +3,38 @@
 {
     font-family: 'Lateef', cursive;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    color: #f1f1f1;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    color: #ffffff;
+  }
 
 /* navbar */
 .navbar-background-color
 {
-    background-color: yellow;
+    background-color: #8B0000;
 }
 .navbar-fontsize
 {
     font-size: 35px;
+}
+.nav
+{
+    display: inline-block;
 }
 
 

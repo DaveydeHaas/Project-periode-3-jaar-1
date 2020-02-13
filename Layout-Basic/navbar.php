@@ -1,5 +1,5 @@
 <?php $content = (isset($_GET['content'])?$_GET['content']:false); ?>
-<nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light">
+<nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <div class="row">
       <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
