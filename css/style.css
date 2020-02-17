@@ -30,11 +30,22 @@ ul {
 }
 .navbar-fontsize
 {
-    font-size: 35px;
+    font-size: 20px;
 }
+
+.navbar-login
+{
+    font-size: 12px;
+}
+
 .nav
 {
     display: inline-block;
+}
+
+.brand-logo
+{
+    height: 50px;
 }
 
 
@@ -55,9 +66,10 @@ ul {
 
 .footer-fontsize
 {   
-    font-size: 25px;
+    font-size: 15px;
     color: whitesmoke;
 }
+
 
 /* homepage */
 .home-background-color {
@@ -70,3 +82,4 @@ ul {
     margin-right: auto;
     margin-left: auto;
 }
+ 
