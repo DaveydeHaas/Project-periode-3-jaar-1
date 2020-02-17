@@ -80,14 +80,8 @@ ul {
 .home-margin-bottom {
     margin-bottom: 50px;
 }
-<<<<<<< HEAD
-=======
-.container-fluid {
-    width: 100%;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-right: auto;
-    margin-left: auto;
+
+.home-carousel-border {
+    border-style: solid;
+    border-color: #23272a;
 }
- 
->>>>>>> ff288b35f5e070c166a70b86f4f907ac2c19715d
