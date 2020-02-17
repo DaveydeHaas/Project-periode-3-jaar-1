@@ -1,29 +1,56 @@
 <div class="container-fluid">
+  <div class="row">
 
-    <div class="row">
-      <div class="col-md-8 mb-5">
-        <h2>What We Do</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-      </div>
-      <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>Start Bootstrap</strong>
-          <br>3481 Melrose Place
-          <br>Beverly Hills, CA 90210
-          <br>
-        </address>
-        <address>
-          <abbr title="Phone">P:</abbr>
-          (123) 456-7890
-          <br>
-          <abbr title="Email">E:</abbr>
-          <a href="mailto:#">name@example.com</a>
-        </address>
-
-      </div>
+    <div class="col-2">
     </div>
+    <div class="col-8">
+      <h1 class="text-center font-weight-bold home-margin-top">Wat is Schizofrenie?</h1>
+      <p class="text-center">Schizofrenie is een ernstige en complexe psychiatrische ziekte, die gepaard gaat met psychoses.<br>Bij deze hersenaandoening verliest iemand het contact met de werkelijkheid.</h2>
+
+    </div>
+    <div class="col-2">
+    </div>
+    <div class="col-12 text-center">
+        <a href="index.php?content=info" class="btn btn-outline-dark home-margin-bottom">Meer informatie</a>
+    </div>
+
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+    <div class="card-deck home-margin-bottom">
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Handleiding</h5>
+      <p class="card-text">test</p>
+    </div>
+    <div class="card-footer">
+      <a href="index.php?content=info" class="btn btn-outline-dark">Game Info</a>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Game</h5>
+      <p class="card-text">test</p>
+    </div>
+    <div class="card-footer">
+    <a href="index.php?content=info" class="btn btn-outline-dark">Speel Game</a>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Highscores</h5>
+      <p class="card-text">test</p>
+    </div>
+    <div class="card-footer">
+    <a href="index.php?content=info" class="btn btn-outline-dark">Game Scores</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-2">
+    </div>
+  
+
+
+  </div>
+</div>
