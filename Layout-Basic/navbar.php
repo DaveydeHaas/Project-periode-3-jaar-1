@@ -1,9 +1,8 @@
 <?php $content = (isset($_GET['content'])?$_GET['content']:false); ?>
 <nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-    <div class="row">
       <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
-          src="./img/logo.png" alt="Homepage Logo brandLogo"></a>
+          src="./img/logo.png" alt="Homepage Logo brandLogo" class="brand-logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,9 +16,15 @@
           <li class="<?php if ($content == 'spel') echo 'active' ?>">
             <a href="index.php?content=spel">Spel</a></li>
           <li class="<?php if ($content == 'highscores') echo 'active' ?>">
-            <a href="index.php?content=highscores">Highscores</a></li>
+            <a href="index.php?content=highscores">Topscores</a></li>   
+        </ul>
+
+        <ul class="navbar-login">
+          <li style="" class="<?php if ($content == 'highscores') echo 'active' ?>">
+            <a href="index.php?content=highscores">Login</a></li>
+          <li style="" class="<?php if ($content == 'highscores') echo 'active' ?>">
+            <a href="index.php?content=highscores">Registratie</a></li>  
         </ul>
       </div>
-    </div>
   </div>
 </nav>

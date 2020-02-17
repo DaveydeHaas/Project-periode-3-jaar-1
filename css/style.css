@@ -30,11 +30,22 @@ ul {
 }
 .navbar-fontsize
 {
-    font-size: 35px;
+    font-size: 20px;
 }
+
+.navbar-login
+{
+    font-size: 12px;
+}
+
 .nav
 {
     display: inline-block;
+}
+
+.brand-logo
+{
+    height: 50px;
 }
 
 
@@ -55,9 +66,10 @@ ul {
 
 .footer-fontsize
 {   
-    font-size: 25px;
+    font-size: 15px;
     color: whitesmoke;
 }
+
 
 /* homepage */
 
@@ -68,3 +80,14 @@ ul {
 .home-margin-bottom {
     margin-bottom: 50px;
 }
+<<<<<<< HEAD
+=======
+.container-fluid {
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: auto;
+    margin-left: auto;
+}
+ 
+>>>>>>> ff288b35f5e070c166a70b86f4f907ac2c19715d

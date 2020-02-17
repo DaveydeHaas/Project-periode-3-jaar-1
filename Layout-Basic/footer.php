@@ -23,7 +23,7 @@
 
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                     <li>
                         <a href="#!">Link 1</a>
                     </li>
@@ -48,7 +48,7 @@
 
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                     <li>
                         <a href="#!">Link 1</a>
                     </li>
@@ -73,18 +73,18 @@
 
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-links">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a class="margin-fix-footer" href="#!">Link 1</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a class="margin-fix-footer" href="#!">Link 2</a>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a class="margin-fix-footer" href="#!">Link 3</a>
                     </li>
                     <li>
-                        <a href="#!">Link 4</a>
+                        <a class="margin-fix-footer" href="#!">Link 4</a>
                     </li>
                 </ul>
 
