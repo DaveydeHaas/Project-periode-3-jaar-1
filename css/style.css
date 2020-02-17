@@ -72,6 +72,11 @@ ul {
 
 
 /* homepage */
-.home-background-color {
-    background-color: #99aab5;
+
+.home-margin-top {
+    margin-top: 50px ;
+}
+
+.home-margin-bottom {
+    margin-bottom: 50px;
 }
