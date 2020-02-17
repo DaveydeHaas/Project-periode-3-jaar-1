@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row">
       <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
-          src="./img/logo.png" alt="Homepage Logo"></a>
+          src="./img/logo.png" alt="Homepage Logo brandLogo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
