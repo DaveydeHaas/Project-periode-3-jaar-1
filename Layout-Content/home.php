@@ -24,25 +24,25 @@
       <p class="card-text">test</p>
     </div>
     <div class="card-footer">
-      <a href="index.php?content=info" class="btn btn-outline-dark">Game Info</a>
+      <a href="index.php?content=handleiding" class="btn btn-outline-dark">Game Info</a>
     </div>
   </div>
   <div class="card text-center">
     <div class="card-body">
-      <h5 class="card-title">Game</h5>
+      <h5 class="card-title">Spel</h5>
       <p class="card-text">test</p>
     </div>
     <div class="card-footer">
-    <a href="index.php?content=info" class="btn btn-outline-dark">Speel Game</a>
+    <a href="index.php?content=spel" class="btn btn-outline-dark">Spel</a>
     </div>
   </div>
   <div class="card text-center">
     <div class="card-body">
-      <h5 class="card-title">Highscores</h5>
+      <h5 class="card-title">Topscores</h5>
       <p class="card-text">test</p>
     </div>
     <div class="card-footer">
-    <a href="index.php?content=info" class="btn btn-outline-dark">Game Scores</a>
+    <a href="index.php?content=highscores" class="btn btn-outline-dark">Topscores</a>
     </div>
   </div>
 </div>

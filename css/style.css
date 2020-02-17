@@ -80,3 +80,31 @@ ul {
 .home-margin-bottom {
     margin-bottom: 50px;
 }
+
+/* Scoreboard */
+.scoreboard-style
+{
+    background-color: #8B0000;
+    color: #fff;
+    border: #8B0000;
+    outline: none;
+    margin: 20px;
+}
+
+.btn-score {
+    background-color: #8B0000;
+    color: #fff;
+    border: #8B0000;
+}
+
+.btn-score:hover {
+    background-color: #fff;
+    color: #8B0000;
+    border: #8B0000;
+}
+
+.btn-score:active {
+    background-color: #8B0000;
+    color: #fff;
+    border: #8B0000;
+}
