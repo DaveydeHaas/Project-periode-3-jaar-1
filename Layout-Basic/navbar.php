@@ -2,7 +2,7 @@
 <nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
       <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
-          src="./img/logo.png" alt="Homepage Logo brandLogo" class="brand-logo"></a>
+          src="./img/Logo.png" alt="Homepage Logo brandLogo" class="brand-logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
