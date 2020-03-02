@@ -81,7 +81,33 @@ ul {
     margin-bottom: 50px;
 }
 
+.home-card-footer 
+{
+    background-color: #8B0000;
+} 
+
 .home-carousel-border {
     border-style: solid;
     border-color: #23272a;
+    border-radius: 12px;
+}
+
+.home-img {
+    border-radius: 8px;
+  }
+
+.card {
+    border-radius: 30px;
+}  
+
+/* Registratie */
+
+.registratie-border {
+    border-style: solid;
+    border-color: #23272a;
+}
+
+.registratie-margin {
+    margin-top: 50px ;
+    margin-bottom: 50px;
 }

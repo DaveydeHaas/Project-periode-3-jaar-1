@@ -21,6 +21,8 @@
 </head>
 
 <body class="lettertype">
+   <!-- Header -->
+   <?php include("./layout-basic/header.php"); ?>
   <!-- include navbar -->
   <?php include("./layout-basic/navbar.php"); ?>
 

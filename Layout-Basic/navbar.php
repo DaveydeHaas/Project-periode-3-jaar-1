@@ -11,8 +11,10 @@
         <ul class="navbar-nav mr-auto">
           <li class="<?php if ($content == 'home') echo 'active'?>">
             <a href="./index.php?content=home">Home</a></li>
-          <li class="<?php if ($content == 'handleiding') echo 'active' ?>">
-            <a href="index.php?content=handleiding">Handleiding</a></li>
+          <li class="<?php if ($content == 'informatie') echo 'active'?>">
+            <a href="./index.php?content=informatie">Informatie</a></li>
+          <li class="<?php if ($content == 'inschrijf-formulier') echo 'active' ?>">
+            <a href="index.php?content=inschrijf-formulier">Inschrijven</a></li>
           <li class="<?php if ($content == 'spel') echo 'active' ?>">
             <a href="index.php?content=spel">Spel</a></li>
           <li class="<?php if ($content == 'highscores') echo 'active' ?>">
