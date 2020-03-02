@@ -13,8 +13,6 @@
             <a href="./index.php?content=home">Home</a></li>
           <li class="<?php if ($content == 'informatie') echo 'active'?>">
             <a href="./index.php?content=informatie">Informatie</a></li>
-          <li class="<?php if ($content == 'inschrijf-formulier') echo 'active' ?>">
-            <a href="index.php?content=inschrijf-formulier">Inschrijven</a></li>
           <li class="<?php if ($content == 'spel') echo 'active' ?>">
             <a href="index.php?content=spel">Spel</a></li>
           <li class="<?php if ($content == 'highscores') echo 'active' ?>">
@@ -22,10 +20,10 @@
         </ul>
 
         <ul class="navbar-login">
-          <li style="" class="<?php if ($content == 'highscores') echo 'active' ?>">
-            <a href="index.php?content=highscores">Login</a></li>
-          <li style="" class="<?php if ($content == 'highscores') echo 'active' ?>">
-            <a href="index.php?content=highscores">Registratie</a></li>  
+          <li style="" class="<?php if ($content == 'login') echo 'active' ?>">
+            <a href="index.php?content=login">Login</a></li>
+          <li style="" class="<?php if ($content == 'registratie') echo 'active' ?>">
+            <a href="index.php?content=registratie">Registratie</a></li>  
         </ul>
       </div>
   </div>
