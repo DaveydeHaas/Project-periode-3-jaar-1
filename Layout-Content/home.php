@@ -40,7 +40,6 @@
     <div class="col-2">
     </div>
     <div class="col-8">
-<<<<<<< HEAD
       <h1 class="text-center font-weight-bold home-margin-top">Welkom bij Schizopedia!</h1>
       <p class="text-center">Schizopedia is er voor iedereen die meer wil weten over schizofrenie.</h2>
     </div>
@@ -51,34 +50,6 @@
     </div>
 
     <div class="col-2">
-=======
-    <div class="card-deck home-margin-bottom">
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Handleiding</h5>
-      <p class="card-text">test</p>
-    </div>
-    <div class="card-footer">
-      <a href="index.php?content=handleiding" class="btn btn-outline-dark">Game Info</a>
-    </div>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Spel</h5>
-      <p class="card-text">test</p>
-    </div>
-    <div class="card-footer">
-    <a href="index.php?content=spel" class="btn btn-outline-dark">Spel</a>
-    </div>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Topscores</h5>
-      <p class="card-text">test</p>
-    </div>
-    <div class="card-footer">
-    <a href="index.php?content=highscores" class="btn btn-outline-dark">Topscores</a>
->>>>>>> 4436d54903dfbc7f80131b7d2b2ea439fcd9743f
     </div>
     <div class="col-8">
       <div class="card-deck home-margin-bottom">
