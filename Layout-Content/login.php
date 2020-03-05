@@ -5,7 +5,7 @@
       <label for="username">
         <i class="fa fa-user"></i>
       </label>
-      <input type="text" name="username" placeholder="Username" id="username" required>
+      <input type="text" name="username" placeholder="Username/Email" id="username/Email" required>
       <label for="password">
         <i class="fa fa-lock"></i>
       </label>

@@ -30,7 +30,7 @@ ul {
 }
 .navbar-fontsize
 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .navbar-login
@@ -107,7 +107,11 @@ ul {
     border-color: #23272a;
 }
 
-.registratie-margin {
-    margin-top: 50px ;
-    margin-bottom: 50px;
+.registratie-container {
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+.registratie-button{
+    background-color: #8B0000;
+    color: #ffffff;
 }
