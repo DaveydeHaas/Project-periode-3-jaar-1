@@ -10,7 +10,7 @@
         <i class="fa fa-lock"></i>
       </label>
       <input type="password" name="password" placeholder="Password" id="password" required>
-      <input type="submit" value="Login">
+      <input type="submit" value="login">
     </form> 
   </div>
 </div>
