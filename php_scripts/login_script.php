@@ -1,6 +1,6 @@
 <?php
   // include connection and sanitize
-  include("./php_scripts/connectDB.php");
+  include("./php_scripts/db_connect.php");
   include("./php_scripts/functions.php");
 
   $username = sanitize($_POST['username']); // Username sanitizen (door mysql_real_escape_string & htmlspecialchars)
