@@ -1,3 +1,4 @@
+<!-- homepage -->
 <div class="container-fluid">
   <div class="row">
 
@@ -5,7 +6,7 @@
     <div class="col-2">
     </div>
     <div class="col-8 home-margin-top">
-
+      <!-- dit is een carousel deze laat plaatjes om de tijd zien op de homepage -->
       <div id="carouselExampleIndicators" class="carousel slide home-carousel-border" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -36,7 +37,7 @@
     <div class="col-2">
     </div>
 
-
+    <!-- begroetingswoord -->
     <div class="col-2">
     </div>
     <div class="col-8">
@@ -49,6 +50,7 @@
       <a href="index.php?content=informatie" class="btn btn-outline-dark home-margin-bottom">Informatie</a>
     </div>
 
+    <!-- kopjes voor de belangerijkste punten op de website -->
     <div class="col-2">
     </div>
     <div class="col-8">
@@ -86,5 +88,5 @@
         </div>
       </div>
     </div>
-    <div class="col-2">
-    </div>
+  </div>
+</div>
