@@ -30,10 +30,6 @@ else
                 $username = sanitize($_POST["username"]);
                 $password = sanitize($_POST["pass"]);
                 
-                $sql = "SELECT * FROM `register` WHERE `email` = '$email'";
-                //$sql = "SELECT * FROM `register` WHERE `password` = '$password'";
-                //$sql = "SELECT * FROM `register` WHERE `username` = '$username'";
-                
                 $result = mysqli_query($conn, $sql);
 
                 if (mysqli_num_rows($result))
@@ -44,9 +40,17 @@ else
                 else
                 {
                     //email adress toegevoegen aan de tabel
-                    echo password_hash($password, PASSWORD_BCRYPT);
+                    $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
-                    $sql = "INSERT INTO `register` (`id`, `email`. `password`, `userrole`)(NULL, '$email', 'password_hash', 'user')"
+                    $sql = "INSERT INTO `register` (`id`, `email`. `password`, `userrole`)(NULL, '$email', '$password_hash', 'user')";
+                    if (mysqli_query($conn, $sql)) 
+                    {
+                        header ("Location: ./index.php?content=message&alert=register-complete");
+                    }
+                    else
+                    {
+                        header ("Location: ./index.php?content=message&alert=register-error");
+                    }
                 }
             }
         }

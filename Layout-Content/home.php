@@ -88,12 +88,5 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <div class="col-2">
-    </div>
   </div>
 </div>
-=======
-  </div>
-</div>
->>>>>>> 0752f044436c52698077ac4502b0029ac385a0ac

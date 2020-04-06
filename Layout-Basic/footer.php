@@ -31,5 +31,5 @@
         <div class="footer-background-color2 text-center py-3">Project 3 |
             <a href="./index.php?content=home">Schizopedia.com</a>
         </div>
+    </div>
 </footer>
-</div>

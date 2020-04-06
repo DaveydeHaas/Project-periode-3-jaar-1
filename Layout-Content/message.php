@@ -63,12 +63,28 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
-    case "":
-
+    case "register-complete":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>register-complete</h1>
+        <hr>
+        <p>U bent succesvol geregistreerd op de webstie Schizopedia</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
     break;
 
-    case "":
-
+    case "register-error":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>register-error</h1>
+        <hr>
+        <p>Er is iets fout gegaan probeer dit later opnieuw. <br> Als deze fout zich voor blijft doen neem contact op met de server admin.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
     case "":
