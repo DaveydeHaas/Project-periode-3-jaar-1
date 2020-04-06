@@ -68,6 +68,22 @@ li a:hover {
     color: whitesmoke;
 }
 
+.container-fluid {
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-text {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 0%;
+}
+
 /* homepage */
 
 .home-margin-top {
@@ -96,6 +112,10 @@ li a:hover {
     border-radius: 30px;
 }
 
+.img-card {
+    border-radius: 30px;
+}
+
 /* Registratie */
 
 .registratie-border {
@@ -120,4 +140,8 @@ li a:hover {
 .info-margin-bot {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.info-card-footer {
+    background-color: #8B0000;
 }
