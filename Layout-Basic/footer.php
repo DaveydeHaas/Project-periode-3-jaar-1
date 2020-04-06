@@ -1,6 +1,9 @@
 <footer class="footer-background-color footer-fontsize page-footer font-small pt-4">
-    <div class="container-fluid text-center text-md-left">
+
+    <div class="container-fluid footer-container-fluid text-center text-md-left">
+
         <div class="row">
+
             <div class="col-md-4 mx-auto">
 
                 <h5 class="font-weight-bold text-uppercase col-6 footer-text">Schizopedia</h5>
@@ -8,6 +11,7 @@
                 <p>Schizofrenie is een ernstige en complexe psychiatrische ziekte, die gepaard gaat met psychoses. Bij deze hersenaandoening verliest iemand het contact met de werkelijkheid.</p>
 
             </div>
+
             <div class="col-md-2 mx-auto">
 
                 <h5 class="font-weight-bold text-uppercase col-6 footer-text">Links</h5>
@@ -27,9 +31,13 @@
                     </li>
                 </ul>
             </div>
+
         </div>
-        <div class="footer-background-color2 text-center py-3">Project 3 |
-            <a href="./index.php?content=home">Schizopedia.com</a>
-        </div>
+
     </div>
+    
+    <div class="footer-background-color2 text-center py-3">Project 3 |
+        <a href="./index.php?content=home">Schizopedia.com</a>
+    </div>
+
 </footer>
