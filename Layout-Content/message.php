@@ -51,13 +51,13 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
-    case "":
+    case "email-exists":
         echo '
         <div class="alert alert-danger" role="alert">
         <br>
-        <h1>No-email</h1>
+        <h1>email-exists</h1>
         <hr>
-        <p>U heeft geen email ingevoerd probeer dit opnieuw</p>
+        <p>Het ingevoerde email adress bestaat al probeer dit later opnieuw.</p>
         <br>
         </div>'; 
         header("Refresh:3 ; ./index.php?content=registratie");
