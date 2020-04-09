@@ -6,12 +6,13 @@
         <img src="./img/img1" class="card-img-top img-card" alt="">
       </div>
     </div>
-    <div class="col-lg-5">
+    <div class="col-5">
       <h2>Oorzaak</h2>
       <hr>
       <p>Bij de oorzaak van schizofrenie speelt erfelijkheid een rol, maar genetische aanleg alleen is niet de enige factor. Het gaat ook om belastende omstandigheden (stressvolle situaties) waarin iemand dusdanig kwetsbaar is dat een psychose de kans krijgt. Schizofrenie openbaart zich vaak rond de puberteit, een tijd van grote persoonlijke veranderingen.</p>
     </div>
   </div>
+
 
   <div class="row info-margin-bot">
 
@@ -53,7 +54,7 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-4">
 
       <div class="card">
         <div class="view overlay">
@@ -92,7 +93,7 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-4">
       <div class="card">
         <div class="view overlay">
           <img src="./img/img4" class="card-img-top img-card" height="200px" alt="">
