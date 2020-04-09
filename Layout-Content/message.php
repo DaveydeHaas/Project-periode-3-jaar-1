@@ -57,7 +57,19 @@ switch($alert){
         <br>
         <h1>email-exists</h1>
         <hr>
-        <p>Het ingevoerde email adress bestaat al probeer dit later opnieuw.</p>
+        <p>Het ingevoerde email adress bestaat al probeer een ander email adress.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=registratie");
+    break;
+
+    case "username-exists":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>username-exists</h1>
+        <hr>
+        <p>De ingevoerde username bestaat al probeer een andere username.</p>
         <br>
         </div>'; 
         header("Refresh:3 ; ./index.php?content=registratie");
@@ -87,12 +99,16 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
-    case "":
-
-    break;
-
-    case "":
-
+    case "password-no-match":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>no-pass-match</h1>
+        <hr>
+        <p>U wachtwoord en verify wachtwoord komen niet overeen.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
     case "":
