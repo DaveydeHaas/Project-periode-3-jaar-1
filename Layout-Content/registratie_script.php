@@ -23,30 +23,66 @@ else
             }
             else
             {
-                include("./php_scripts/db_connect.php");
-                include("./php_scripts/functions.php");
-                
-                $email = sanitize($_POST["email"]);
-                $username = sanitize($_POST["username"]);
-                $password = sanitize($_POST["pass"]);
-                
-                $sql = "SELECT * FROM `register` WHERE `email` = '$email'";
-                //$sql = "SELECT * FROM `register` WHERE `password` = '$password'";
-                //$sql = "SELECT * FROM `register` WHERE `username` = '$username'";
-                
-                $result = mysqli_query($conn, $sql);
 
-                if (mysqli_num_rows($result))
+                if(empty($_POST["pass"]) || empty($_POST["cpass"]))
                 {
-                    //email bestaat al
-                    header("Location: ./index.php?content=message&alert=email-exists");
+                    header("Location: ./index.php?content=message&alert=no-pass-match");
                 }
                 else
                 {
-                    //email adress toegevoegen aan de tabel
-                    echo password_hash($password, PASSWORD_BCRYPT);
+                    include("./php_scripts/db_connect.php");
+                    include("./php_scripts/functions.php");
+                    
+                    $email = sanitize($_POST["email"]);
+                    $username = sanitize($_POST["username"]);
+                    $password = sanitize($_POST["pass"]);
+                    $verifypassword = sanitize($_POST["cpass"]);
+                    
+                    $sql = "SELECT * FROM `register` WHERE `email` = '$email' ";
 
-                    $sql = "INSERT INTO `register` (`id`, `email`. `password`, `userrole`)(NULL, '$email', 'password_hash', 'user')"
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result))
+                    {
+                        //email bestaat al
+                        header("Location: ./index.php?content=message&alert=email-exists");
+                    }
+                    else
+                    {
+                        
+                        $sql = "SELECT * FROM `register` WHERE `username` = '$username' ";
+                        
+                        $result2 = mysqli_query($conn, $sql);
+                        
+                        if (mysqli_num_rows($result2))
+                        {
+                            //username bestaat al
+                            header("Location: ./index.php?content=message&alert=username-exists");
+                        }
+                        else
+                        {
+                            if($password == $verifypassword)
+                            {
+                                //Gegevens sturen naar de database tabel register
+                                $password_hash = password_hash($password, PASSWORD_BCRYPT);
+
+                                $sql = "INSERT INTO `register` (`id`,username ,`email`, `password`, `userrole`) VALUES(NULL, '$username', '$email', '$password_hash', 'user')";
+                                
+                                if (mysqli_query($conn, $sql)) 
+                                {
+                                    header ("Location: ./index.php?content=message&alert=register-complete");
+                                }
+                                else
+                                {
+                                header ("Location: ./index.php?content=message&alert=register-error");
+                                }
+                            }
+                            else
+                            {
+                                header("Location: ./index.php?content=message&alert=password-no-match");
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,28 +1,25 @@
 <!-- form login -->
-<div class="container-fluid">
-  <div class="login">
-    <form action="./index.php?content=login-script" method="post">
-      <div class="container registratie-container">
+<form action="./index.php?content=login_script" method="post">
+    <div class="container form-container">
         <div class="form-row">
-          <div class="col-12">
-            <H1>Login</H1>
-          </div>
-          <div class="form-group col-md-6">
-            <i class="fa fa-lock"></i>
-            <label for="inputusername">Username</label> <br>
-            <input type="text" name="username" placeholder="Username/Email" id="username/Email" required>
-          </div>
+            <div class="col-12">
+                <H1>Inloggen</H1>
+            </div>
+            <div class="form-group col-md-4">
+                <i class="fa fa-user"></i>
+                <label for="inputusername">Username</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+            </div>
         </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <i class="fa fa-envelope"></i>
-            <label for="inputusername">Password</label> <br>
-            <input type="password" name="password" placeholder="Password" id="password" required>
-          </div>
+            <div class="form-group col-md-4">
+                <i class="fa fa-lock"></i>
+                <label for="inputPassword4">Password</label>
+                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" required>
+            </div> 
         </div>
-      </div>
-      <input type="submit" value="login">
-  </div>
-  </form>
-</div>
-</div>
+        <div class="form-row">
+        </div>
+        <button type="submit" class="btn registratie-button" value="checkpassword">Log in</button>
+    </div>
+</form>
