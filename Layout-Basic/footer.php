@@ -6,7 +6,7 @@
 
             <div class="col-md-4 mx-auto">
 
-                <h5 class="font-weight-bold text-uppercase col-6 footer-text">Schizopedia</h5>
+                <h5 class="font-weight-bold text-uppercase col-6 col-sm-12 footer-text">Schizopedia</h5>
                 <p>Schizopedia is er voor iedereen die meer wil weten over schizofrenie</p>
                 <p>Schizofrenie is een ernstige en complexe psychiatrische ziekte, die gepaard gaat met psychoses. Bij deze hersenaandoening verliest iemand het contact met de werkelijkheid.</p>
 
@@ -35,7 +35,7 @@
         </div>
 
     </div>
-    
+
     <div class="footer-background-color2 text-center py-3">Project 3 |
         <a href="./index.php?content=home">Schizopedia.com</a>
     </div>

@@ -1,17 +1,28 @@
 <!-- form login -->
 <div class="container-fluid">
   <div class="login">
-    <h1>Admin - Login</h1>
     <form action="./index.php?content=login-script" method="post">
-      <label for="username">
-        <i class="fa fa-user"></i>
-      </label>
-      <input type="text" name="username" placeholder="Username/Email" id="username/Email" required>
-      <label for="password">
-        <i class="fa fa-lock"></i>
-      </label>
-      <input type="password" name="password" placeholder="Password" id="password" required>
+      <div class="container registratie-container">
+        <div class="form-row">
+          <div class="col-12">
+            <H1>Login</H1>
+          </div>
+          <div class="form-group col-md-6">
+            <i class="fa fa-lock"></i>
+            <label for="inputusername">Username</label> <br>
+            <input type="text" name="username" placeholder="Username/Email" id="username/Email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <i class="fa fa-envelope"></i>
+            <label for="inputusername">Password</label> <br>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+          </div>
+        </div>
+      </div>
       <input type="submit" value="login">
-    </form> 
   </div>
+  </form>
+</div>
 </div>
