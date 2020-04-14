@@ -27,12 +27,12 @@
   
           switch ($userrole) {
             case 'regular':
-              // Link door naar de customerhomepage
+              // Link door naar de homepage
               echo '<div class="alert alert-success" role="alert">Welkom '. $username .' ! U bent ingelogd als '. $userrole .' en zal nu worden doorgestuurd naar de homepage.</div>';
               header("Refresh: 4; url=./index.php?content=home");
             break;
             default:
-              echo '<div class="alert alert-success" role="alert">U bent niet ingelogd in een bepaalde gebruikersrol, U wordt doorgestuurd naar de standaardhomepage.</div>';
+              echo '<div class="alert alert-danger" role="alert">U bent niet ingelogd in een bepaalde gebruikersrol, U wordt doorgestuurd naar de standaardhomepage.</div>';
               header("Refresh: 4; url=./index.php?content=home");
             break;
           } 
