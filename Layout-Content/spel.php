@@ -1,0 +1,1 @@
+<iframe class="iframe-game" src="./game/webGL"></iframe>

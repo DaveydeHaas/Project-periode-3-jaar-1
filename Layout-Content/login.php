@@ -8,14 +8,14 @@
             <div class="form-group col-md-4">
                 <i class="fa fa-user"></i>
                 <label for="inputusername">Username</label>
-                <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                <input type="text" name="username" class="form-control" id="username" placeholder="Username" autofocus required>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
                 <i class="fa fa-lock"></i>
                 <label for="inputPassword4">Password</label>
-                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" >
+                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" required>
             </div> 
         </div>
         <div class="form-row">
