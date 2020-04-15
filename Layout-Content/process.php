@@ -9,7 +9,7 @@
 
         if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
         {
-            HEADER('Location: ./index.php?content=contact.php?error');
+            HEADER('Location: ./index.php?content=message&alert=contacterror');
         }
     
     }

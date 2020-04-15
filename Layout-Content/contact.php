@@ -16,7 +16,7 @@
           <hr>
           <?php
             $Msg = "";
-            if(isset($_GET['error']))
+            if(isset($_GET['contacterror']))
             {
                 $Msg = "Please fill in the blanks ";
                 echo '<div class="alert alert-danger">'.$Msg.'</div>';

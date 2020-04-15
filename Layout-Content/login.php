@@ -39,8 +39,6 @@
                     </div>
                 </form>
             </div>
-<<<<<<< HEAD
-=======
             <div class="form-group col-md-4">
                 <i class="fa fa-user"></i>
                 <label for="inputusername">Username</label>
@@ -55,7 +53,6 @@
             </div> 
         </div>
         <div class="form-row">
->>>>>>> 0f104b0e26c8695a7a8488143928f3b93e92e76d
         </div>
     </div>
 </div>
