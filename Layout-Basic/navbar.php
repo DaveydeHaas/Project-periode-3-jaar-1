@@ -16,7 +16,7 @@
           <li class="<?php if ($content == 'spel') echo 'active' ?>">
             <a href="index.php?content=spel">Spel</a></li>
           <li class="<?php if ($content == 'highscores') echo 'active' ?>">
-            <a href="index.php?content=highscores">Topscores</a></li>   
+            <a href="index.php?content=contact">Contact</a></li>   
         </ul>
 
         <ul class="navbar-login">
