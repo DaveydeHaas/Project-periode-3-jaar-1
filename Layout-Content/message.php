@@ -1,7 +1,7 @@
 <?php
 $alert = (isset($_GET["alert"]))? $_GET["alert"]: "default";
 
-// messages voor registratie
+// messages
 switch($alert){
     case "no-email" :
         echo '
@@ -135,8 +135,16 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=login");
     break;
 
-    case "":
-
+    case "logout":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>logout</h1>
+        <hr>
+        <p>u bent uitgelogd en wordt doorverwezen naar de homepage.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
     break;
 
     case "":

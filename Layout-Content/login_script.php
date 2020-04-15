@@ -32,7 +32,11 @@ else {
     var_dump($password); {
       if (!password_verify($password, $record["password"])) {
         header("Location: ./index.php?content=message&alert=username-password-false");
-      } else {
+      } else 
+      {
+        $_SESSION["id"] = $record["id"];
+        $_SESSION["userrole"] = $record["userrole"];
+        $_SESSION["username"] = $record["username"];
         switch ($record["userrole"]) {
           case 'user':
             header("Location: ./index.php?content=u-home");

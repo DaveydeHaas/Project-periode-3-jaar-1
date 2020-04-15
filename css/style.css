@@ -51,7 +51,13 @@ li a:hover {
 .brand-logo {
     height: 50px;
 }
-
+.nav-profile
+{
+    
+    padding-bottom: 1px;
+    font-size: 14px;
+    color: #ffffff !important;
+}
 /* footer */
 
 #footer {

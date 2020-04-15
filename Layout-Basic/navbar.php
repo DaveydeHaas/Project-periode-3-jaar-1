@@ -1,4 +1,5 @@
-<?php $content = (isset($_GET['content'])?$_GET['content']:false); ?>
+<?php
+$content = (isset($_GET['content'])?$_GET['content']:false); ?>
 <nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
       <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
@@ -20,10 +21,18 @@
         </ul>
 
         <ul class="navbar-login">
-          <li style="" class="<?php if ($content == 'login') echo 'active' ?>">
-            <a href="index.php?content=login">Login</a></li>
-          <li style="" class="<?php if ($content == 'registratie') echo 'active' ?>">
-            <a href="index.php?content=registratie">Registratie</a></li>  
+          <?php
+            if(isset($_SESSION["id"]))
+            {
+              echo '<li class="'; echo'"><a class="nav-profile">'; echo($_SESSION["username"]); echo'</a></li>';
+              echo '<li class="'; echo ($content == "logout") ? "active" : ""; echo '"><a href="index.php?content=logout">Logout</a></li>';
+            }
+            else
+            {
+              echo'<li class="'; echo($content == 'login') ? "active" : ""; echo '"><a href="index.php?content=login">Login</a></li>';
+              echo'<li  class="'; echo($content == 'registratie') ? "active": ""; echo '"><a href="index.php?content=registratie">Registratie</a></li>';  
+            }
+          ?>
         </ul>
       </div>
   </div>
