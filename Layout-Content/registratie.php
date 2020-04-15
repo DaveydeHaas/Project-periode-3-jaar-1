@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!-- form registratie -->
 
 <div class="container-fluid">
