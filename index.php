@@ -1,4 +1,4 @@
-<?php ob_start(); session_start(); ?>
+<?php ob_start(); session_start(); session_gc(); ?>
 
 <!doctype html>
 <html lang="en">

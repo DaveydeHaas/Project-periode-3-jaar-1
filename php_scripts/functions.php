@@ -8,6 +8,8 @@ function sanitize($raw_data)
     $data = mysqli_real_escape_string($conn, $raw_data);
     // Zorgt dat data geen scripts etc kan uitvoeren.
     $data = htmlspecialchars($data);
+    //trimt de data van spaties
+    $data = trim($data);
     // geeft $data terug 
     return $data;
 }

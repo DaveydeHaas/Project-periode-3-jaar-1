@@ -39,6 +39,23 @@
                     </div>
                 </form>
             </div>
+<<<<<<< HEAD
+=======
+            <div class="form-group col-md-4">
+                <i class="fa fa-user"></i>
+                <label for="inputusername">Username</label>
+                <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <i class="fa fa-lock"></i>
+                <label for="inputPassword4">Password</label>
+                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" >
+            </div> 
+        </div>
+        <div class="form-row">
+>>>>>>> 0f104b0e26c8695a7a8488143928f3b93e92e76d
         </div>
     </div>
 </div>
