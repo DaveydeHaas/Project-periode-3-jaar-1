@@ -111,12 +111,28 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
-    case "":
-
+    case "loginform-empty":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>login-form-empty</h1>
+        <hr>
+        <p>U heeft 1 van de beide velden niet ingevuld, probeer dit opnieuw </p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=login");
     break;
 
-    case "":
-
+    case "username-password-false":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>username-password-false</h1>
+        <hr>
+        <p>Het door u ingevulde username en password combinatie komt niet met elkaar overeen. probeer het opnieuw.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=login");
     break;
 
     case "":

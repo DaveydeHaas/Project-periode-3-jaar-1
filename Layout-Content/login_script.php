@@ -1,55 +1,60 @@
 <?php
-  // include connection and sanitize
-  include("./php_scripts/db_connect.php");
-  include("./php_scripts/functions.php");
+// include connection and sanitize
+include("./php_scripts/db_connect.php");
+include("./php_scripts/functions.php");
 
-  $username = sanitize($_POST['username']); // Username sanitizen (door mysql_real_escape_string & htmlspecialchars)
-  $password = sanitize($_POST['pass']); // password sanitizen
+// Username sanitizen (door mysql_real_escape_string & htmlspecialchars)
+$username = sanitize($_POST["username"]);
+// password sanitizen
+$password = sanitize($_POST["pass"]);
 
-  if (!empty($username)) {
-    if (!empty($password)) {
-      $sql = "SELECT * FROM `register` WHERE `username`='$username';"; // Selecteer user uit de database
+//check of de login velden zijn ingevuld
+if (empty($username) || empty($password)) {
+  header("Location: ./index.php?content=message&alert=loginform-empty");
+}
+//check of de login velden zijn ingevuld
+else {
+  //maakt een connectie met de data, database en table
+  $sql = "SELECT * FROM `register` WHERE `username` = '$username'";
 
-      $checkdbuser = mysqli_query($conn, $sql); // Voert query select uit
+  $result = mysqli_query($conn, $sql);
 
-      // Controleert of username bestaat
-      if (mysqli_num_rows($checkdbuser) == 1) {
-        $record = mysqli_fetch_assoc($checkdbuser);
-        
-        $pwh = $record['password'];
 
-        // Controleert of wachtwoord overeenkomt met opgeslagen wachtwoord in database
-        if (password_verify($password, $pwh)) {
-          $userrole = $record["userrole"];
-  
-          $_SESSION["id"] = $record["id"];
-          $_SESSION["userrole"] = $record["userrole"];
-  
-          switch ($userrole) {
-            case 'regular':
-              // Link door naar de homepage
-              echo '<div class="alert alert-success" role="alert">Welkom '. $username .' ! U bent ingelogd als '. $userrole .' en zal nu worden doorgestuurd naar de homepage.</div>';
-              header("Refresh: 4; url=./index.php?content=home");
-            break;
-            default:
-              echo '<div class="alert alert-danger" role="alert">U bent niet ingelogd in een bepaalde gebruikersrol, U wordt doorgestuurd naar de standaardhomepage.</div>';
-              header("Refresh: 4; url=./index.php?content=home");
-            break;
-          } 
-        } else {
-            echo '<div class="alert alert-danger" role="alert">Uw wachtwoord klopt niet. Probeer het opnieuw.</div>';
-            header('Refresh: 4; url=index.php?content=login');
-        }
-      } else {
-        echo '<div class="alert alert-danger" role="alert">Uw username klopt niet. Probeer het opnieuw.</div>';
-        header('Refresh: 4; url=index.php?content=login');
-      }
-    } else {
-      echo '<div class="alert alert-danger" role="alert">U heeft geen wachtwoord ingevuld. Alle velden zijn verplicht in te vullen.</div>';
-      header('Refresh: 4; url=index.php?content=login');
-    }
+  // kijkt na of de gegeven data overeen komt
+  if (!mysqli_num_rows($result)) {
+    header("Location: ./index.php?content=message&alert=username-password-false");
   } else {
-    echo '<div class="alert alert-danger" role="alert">U heeft geen username ingevuld. Alle velden zijn verplicht in te vullen.</div>';
-    header('Refresh: 4; url=index.php?content=login');
+    $record = mysqli_fetch_assoc($result);
+
+    //gehaste password uit database
+    var_dump($record["password"]);
+    //password die de gebruiker ingevuld heeft
+    var_dump($password); {
+      if (!password_verify($password, $record["password"])) {
+        header("Location: ./index.php?content=message&alert=username-password-false");
+      } else {
+        switch ($record["userrole"]) {
+          case 'user':
+            header("Location: ./index.php?content=u-home");
+          break;
+
+          case 'root':
+            header("Location: ./index.php?content=r-home");
+          break;
+
+          case 'admin':
+            header("Location: ./index.php?content=a-home");
+          break;
+
+          case 'moderator':
+            header("Location: ./index.php?content=m-home");
+          break;
+
+          default:
+            header("Location: ./index.php?content=home");
+          break;
+        }
+      }
+    }
   }
-?>
+}
