@@ -8,7 +8,7 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="col-10 collapse navbar-collapse no-padding" id="navbarSupportedContent">
+        <div class="col-9 collapse navbar-collapse no-padding" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <?php
               if(isset($_SESSION["id"]))

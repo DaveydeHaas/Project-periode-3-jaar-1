@@ -47,7 +47,7 @@ else {
           break;
 
           case 'admin':
-            header("Location: ./index.php?content=a-home");
+            header("Location: ./index.php?content=register");
           break;
 
           case 'moderator':

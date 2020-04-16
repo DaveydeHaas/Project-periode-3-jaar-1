@@ -21,7 +21,7 @@ while ($record = mysqli_fetch_assoc($result)) {
   $records .= "<tr><td scope='row'>" . $record["id"] . "</td>
                   <td>" . $record["username"] . "</td>
                   <td>" . $record["email"] . "</td>
-                  
+                  <td>" . $record["userrole"] . "</td>
                   </td></tr>";
 };
 
@@ -38,6 +38,7 @@ while ($record = mysqli_fetch_assoc($result)) {
               <th scope="col">Id</th>
               <th scope="col">Username</th>
               <th scope="col">Email</th>
+              <th scope="col">Userrole</th>
             </tr>
           </thead>
           <tbody>
@@ -48,3 +49,12 @@ while ($record = mysqli_fetch_assoc($result)) {
     </div>
   </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
