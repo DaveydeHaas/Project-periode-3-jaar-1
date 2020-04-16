@@ -39,9 +39,19 @@
                         <a href="index.php?content=registratie">Heeft u nog geen account? Registreer hier!</a>
                     </div>
                 </form>
-            </div>
+            </div>           
+        </div>
+        <div class="form-row">
         </div>
     </div>
 </div>
 
 <div class="col-4"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+

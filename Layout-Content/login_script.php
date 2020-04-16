@@ -39,19 +39,19 @@ else {
         $_SESSION["username"] = $record["username"];
         switch ($record["userrole"]) {
           case 'user':
-            header("Location: ./index.php?content=u-home");
+            header("Location: ./index.php?content=home");
           break;
 
           case 'root':
-            header("Location: ./index.php?content=r-home");
+            header("Location: ./index.php?content=home");
           break;
 
           case 'admin':
-            header("Location: ./index.php?content=a-home");
+            header("Location: ./index.php?content=register");
           break;
 
           case 'moderator':
-            header("Location: ./index.php?content=m-home");
+            header("Location: ./index.php?content=home");
           break;
 
           default:

@@ -6,17 +6,30 @@
 
             <div class="col-md-4 mx-auto">
 
-                <h5 class="font-weight-bold text-uppercase col-6 col-sm-12 footer-text">Schizopedia</h5>
+                <h5 class="font-weight-bold text-uppercase col-6 col-sm-12 footer-text1">Schizopedia</h5>
                 <p>Schizopedia is er voor iedereen die meer wil weten over schizofrenie</p>
                 <p>Schizofrenie is een ernstige en complexe psychiatrische ziekte, die gepaard gaat met psychoses. Bij deze hersenaandoening verliest iemand het contact met de werkelijkheid.</p>
 
             </div>
 
-            <div class="col-md-2 mx-auto ">
+            <div class="col-md-2 mx-auto">
 
-               
+                <h5 class="font-weight-bold text-uppercase col-6 footer-text2">Links</h5>
 
-               
+                <ul class="list-unstyled footer-links">
+                    <li>
+                        <a href="./index.php?content=home">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?content=informatie">Informatie</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?content=spel">Spel</a>
+                    </li>
+                    <li>
+                        <a href="./index.php?content=highscores">Topscores</a>
+                    </li>
+                </ul>
             </div>
 
         </div>

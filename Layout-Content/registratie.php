@@ -20,7 +20,7 @@
                             <div class="form-group col-12">
                                 <i class="fa fa-user"></i>
                                 <label for="inputusername">Username</label>
-                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" autofocus required>
                             </div>
                         </div>
 

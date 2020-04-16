@@ -147,8 +147,16 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=home");
     break;
 
-    case "":
-
+    case "auth-error":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Authentication error</h1>
+        <hr>
+        <p>U heeft geen bevoegdheden voor deze pagina. U wordt doorgestuurd naar de homepage.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
     break;
 
     case "":
@@ -163,7 +171,4 @@ switch($alert){
     break;
     
 }
-
-
-
 ?>
