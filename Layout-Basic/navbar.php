@@ -24,6 +24,15 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
                     echo'<li class="'; echo($content == "a-home") ? "active": ""; echo'"><a href="./index.php?content=a-home">Playground</a></li>';
                   break;
 
+                  case 'root':
+                    echo'<li class="'; echo($content == "home") ? "active" : ""; echo'"><a href="./index.php?content=home">Home</a></li>';
+                    echo'<li class="'; echo($content == "informatie") ? "active": ""; echo'"><a href="./index.php?content=informatie">Informatie</a></li>';
+                    echo'<li class="'; echo($content == "spel") ? "active": ""; echo'"><a href="./index.php?content=spel">Spel</a></li>';
+                    echo'<li class="'; echo($content == "contact") ? "active": ""; echo'"><a href="./index.php?content=contact">Contactpagina</a></li>';
+                    echo'<li class="'; echo($content == "register") ? "active": ""; echo'"><a href="./index.php?content=register">Register</a></li>';
+                    echo'<li class="'; echo($content == "a-home") ? "active": ""; echo'"><a href="./index.php?content=a-home">Playground</a></li>';
+                  break;
+
                   case 'user':
                     echo'<li class="'; echo($content == "home") ? "active" : ""; echo'"><a href="./index.php?content=home">Home</a></li>';
                     echo'<li class="'; echo($content == "informatie") ? "active": ""; echo'"><a href="./index.php?content=informatie">Informatie</a></li>';
@@ -39,6 +48,7 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
               {
                 echo'<li class="'; echo($content == "home") ? "active" : ""; echo'"><a href="./index.php?content=home">Home</a></li>';
                 echo'<li class="'; echo($content == "informatie") ? "active": ""; echo'"><a href="./index.php?content=informatie">Informatie</a></li>';
+                echo'<li class="'; echo($content == "contact") ? "active": ""; echo'"><a href="./index.php?content=contact">Contactpagina</a></li>';
               }
             
             ?>
