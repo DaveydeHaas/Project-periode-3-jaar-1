@@ -12,24 +12,11 @@
 
             </div>
 
-            <div class="col-md-2 mx-auto">
+            <div class="col-md-2 mx-auto ">
 
-                <h5 class="font-weight-bold text-uppercase col-6 footer-text">Links</h5>
+               
 
-                <ul class="list-unstyled footer-links">
-                    <li>
-                        <a href="./index.php?content=home">Homepage</a>
-                    </li>
-                    <li>
-                        <a href="./index.php?content=informatie">Informatie</a>
-                    </li>
-                    <li>
-                        <a href="./index.php?content=spel">Spel</a>
-                    </li>
-                    <li>
-                        <a href="./index.php?content=highscores">Topscores</a>
-                    </li>
-                </ul>
+               
             </div>
 
         </div>

@@ -155,17 +155,7 @@ switch($alert){
 
     break;
 
-    case "contacterror":
-            echo '
-            <div class="alert alert-danger" role="alert">
-            <br>
-            <h1>Error</h1>
-            <hr>
-            <p>vul de formulier.</p>
-            <br>
-            </div>'; 
-            header("Refresh:3 ; ./index.php?content=home");
-    break;
+   
 
 
     default:

@@ -58,31 +58,33 @@
         <div class="card text-center">
           <div class="card-body">
             <img src="./img/handleiding.png" alt="Icon" width="30" height="30" scale="1.5">
-            <h5 class="card-title">Handleiding</h5>
-            <p class="card-text">Hier vind u de handleiding voor onze schizofrenie game.</p>
+            <h5 class="card-title">Project P3</h5>
+            <p class="card-text">We hebben een opdracht gekregen om een website en een game over schizofrenie te maken. <br><br>Wilt u meer informatie over schizofrenie klik dan op Schizofrenie onderin.</p>
           </div>
           <div class="card-footer home-card-footer">
-            <small class="text-muted"><a href="index.php?content=handleiding" class="btn btn-outline-light">Handleiding</a></small>
+            <small class="text-muted"><a href="index.php?content=informatie" class="btn btn-outline-light">Schizofrenie</a></small>
           </div>
         </div>
         <div class="card text-center">
           <div class="card-body">
             <img src="./img/Game.png" alt="Icon" width="30" height="30" scale="1.5">
             <h5 class="card-title">Game</h5>
-            <p class="card-text">Hier kunt u onze schizofrenie game spelen.</p>
+            <p class="card-text">Wilt u onze game spelen over schizofrenie?<br><br>Log eerst in!</p>
           </div>
           <div class="card-footer home-card-footer">
-            <small class="text-muted"><a href="index.php?content=spel" class="btn btn-outline-light">Game</a></small>
+            <small class="text-muted"><a href="index.php?content=login" class="btn btn-outline-light">Login</a></small>
           </div>
         </div>
         <div class="card text-center">
           <div class="card-body">
             <img src="./img/HighScores.png" alt="Icon" width="30" height="30" scale="1.5">
-            <h5 class="card-title">Highscores</h5>
-            <p class="card-text">Hier kunt u de highscores van onze schizofrenie spel zien.</p>
+            <h5 class="card-title">Onze Team</h5>
+            <p class="card-text"><b>Web team</b><br>Davey de haas<br>Kenny Nguyen</p>
+            <p class="card-text"><b>Game team</b><br>Rick Letschert<br>Quint Theissen</p>
+            
           </div>
           <div class="card-footer home-card-footer">
-            <small class="text-muted"><a href="index.php?content=highscores" class="btn btn-outline-light">High Scores</a></small>
+            <small class="text-muted"><a href="index.php?content=contact" class="btn btn-outline-light">Contact</a></small>
           </div>
 
         </div>
