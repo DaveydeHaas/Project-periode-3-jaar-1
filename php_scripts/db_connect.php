@@ -2,8 +2,8 @@
     //Inloggen op database en database selecteren
 
     define("SERVERNAME", "localhost");
-    define("USERNAME", "Davey");
-    define("PASSWORD", "KleineG1ngerV2");
+    define("USERNAME", "root");
+    define("PASSWORD", "");
     define("DATABASE", "project3");
 
 //Contact makem met MySQL-Server
